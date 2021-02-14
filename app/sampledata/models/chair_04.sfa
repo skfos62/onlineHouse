@@ -1,0 +1,107 @@
+{
+  materials: [
+    {
+      name: 'Wood__Floor',
+      parameters: [
+        {
+          baseColor: 'Wood__Floor',
+        },
+        {
+          baseColorTint: [
+            0.31764700000000001,
+            0.21568599999999999,
+            0.12548999999999999,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+    {
+      name: 'FrontColor',
+      parameters: [
+        {
+          baseColor: null,
+        },
+        {
+          baseColorTint: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+    {
+      name: 'Metal_Aluminum_Anodized',
+      parameters: [
+        {
+          baseColor: 'Metal_Aluminum_Anodized',
+        },
+        {
+          baseColorTint: [
+            0.84705900000000001,
+            0.83529399999999998,
+            0.85882400000000003,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/models/chair_04.obj',
+    name: 'chair_04',
+    recenter: 'root',
+    scale: 0.002676,
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/chair_04/Metal_Aluminum_Anodized.jpg',
+      name: 'Metal_Aluminum_Anodized',
+      pipeline_name: 'chair_04/Metal_Aluminum_Anodized.jpg',
+    },
+    {
+      file: 'sampledata/models/chair_04/Wood__Floor.jpg',
+      name: 'Wood__Floor',
+      pipeline_name: 'chair_04/Wood__Floor.jpg',
+    },
+  ],
+  version: '0.54:2',
+}

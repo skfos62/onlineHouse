@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingHorizontal="50sp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이메일 인증하기"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textFontWeight="800"
+        android:layout_marginTop="40dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이메일로 발송 된 인증 번호를 적어주세요."
+        android:textColor="#999"
+        android:textSize="14sp"
+        android:textFontWeight="800"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailAuth_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="인증번호입력하기"
+            android:backgroundTint="#000"
+            app:backgroundTint="#000"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/emailAuth_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        android:text="OK"
+        android:textSize="22sp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

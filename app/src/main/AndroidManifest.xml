@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.house2">
+    <!-- ar코어 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" /> <!-- Sceneform requires OpenGLES 3.0 or later. -->
+    <uses-feature
+        android:glEsVersion="0x00030000"
+        android:required="true" />
+    <!--
+ Indicates that this app requires Google Play Services for AR ("AR Required") and results in
+         the app only being visible in the Google Play Store on devices that support ARCore.
+         For an "AR Optional" app, remove this tag.
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <service
+            android:name=".chat.MyService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <activity android:name=".chat.partner_chatt_view"></activity>
+        <activity android:name=".mypage.mypage_payment" />
+        <activity android:name=".partner.partner_delevery_Info" />
+        <activity android:name=".partner.partner_delevery_wait_edit" />
+        <activity android:name=".partner.partner_register_product_edit" />
+        <activity android:name=".partner.partner_register_product_detail" />
+        <activity android:name=".chat.partner_chatt" />
+        <activity android:name=".partner.partner_delevery" />
+        <activity android:name=".partner.partner_register_product" />
+        <activity android:name=".partner.partner_Main" />
+        <activity android:name=".join_partner" />
+        <activity android:name=".join_select" />
+        <activity android:name=".secret" />
+        <activity android:name=".mypage.edit_pw_new" />
+        <activity android:name=".mypage.editPw" />
+        <activity android:name=".mypage.mypage_profileEdit" />
+        <activity android:name=".purchase_completion" />
+        <activity android:name=".buying.SearchAddress" />
+        <activity android:name=".buying.buying" />
+        <activity android:name=".AddCart.addChat" />
+        <activity android:name=".shopping_view" />
+        <activity
+            android:name=".bottom_sheet_shopping"
+            android:theme="@style/Theme.Transparent" />
+        <activity android:name=".shopping_arcore" />
+        <activity android:name=".search_arcore" />
+        <activity android:name=".community_image_tagging_URL" />
+        <activity android:name=".community_image_tagging" />
+        <activity android:name=".community_view" />
+        <activity android:name=".communityWrite" />
+        <activity android:name=".find_pw" />
+        <activity android:name=".findId" />
+        <activity android:name=".login_real" />
+        <activity android:name=".kakaotest" /> <!-- 카카오톡 메타데이터 -->
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <activity android:name=".join_email" />
+        <activity android:name=".join" />
+        <activity android:name=".login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" /> <!-- ar코어 -->
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.ar.codelab.name.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/path" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chat.partner_chatt_view"
+    android:orientation="vertical"
+    android:padding="10sp">
+
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/TextView01"-->
+    <!--        android:layout_width="fill_parent"-->
+    <!--        android:layout_height="wrap_content" />-->
+    <!--    -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <EditText
+            android:id="@+id/EditText01"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="0dp"
+            android:background="@drawable/left_shape"
+            android:padding="10sp"
+            android:layout_weight="1"/>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/Button01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10sp">
+
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="42sp"
+        android:layout_weight="1"
+        android:background="@drawable/right_shape"
+        android:text="보내기"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="보내기"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="@+id/Button01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Button01" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/EditText02"-->
+    <!--            android:layout_width="289dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            tools:layout_editor_absoluteY="0dp" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/Button02"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Send"-->
+    <!--            android:layout_weight="1"/>-->
+    <!--    </LinearLayout>-->
+
+
+</LinearLayout>

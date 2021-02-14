@@ -1,0 +1,16 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl MD157_MK_PSS_Material_01
+Ka 0.000000 0.000000 0.000000
+Kd 0.094118 0.050980 0.019608
+Ks 0.330000 0.330000 0.330000
+map_Kd tables_01/MD157_MK_PSS_Material_01.jpg
+
+newmtl MD157_MK_PSS_Material_02
+Ka 0.000000 0.000000 0.000000
+Kd 0.650980 0.650980 0.650980
+Ks 0.330000 0.330000 0.330000
+map_Kd tables_01/MD157_MK_PSS_Material_02.jpg
+

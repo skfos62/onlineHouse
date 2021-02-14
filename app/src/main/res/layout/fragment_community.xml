@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".community">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/community_write_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="90sp"
+        android:layout_marginRight="30sp"
+        android:backgroundTint="@color/colorMain"
+        android:src="@drawable/pencilthin"
+        app:borderWidth="0px"
+        />
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60sp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30sp"
+            android:orientation="vertical"
+            android:layout_weight="1" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="구경하기"
+                android:textSize="20dp"
+                android:textColor="#000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="다른 사람들이 올린 인테리어를 구경해보세요"
+                android:textSize="15dp"
+                android:textColor="#808080"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="30dp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/item_show_recycle_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+<!--            <Button-->
+<!--                android:id="@+id/community_image_uptest"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="이미지 업로드 "/>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="250sp"-->
+<!--                android:backgroundTint="#f6e1e1"-->
+<!--                app:cardCornerRadius="15sp"-->
+<!--                android:layout_marginTop="17dp"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="협소주택에 관한 이미지  "-->
+<!--                android:textSize="20dp"-->
+<!--                android:textColor="#000"-->
+<!--                android:layout_marginTop="30sp"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="협소주택에 관한 사진들을 모았습니다."-->
+<!--                android:textSize="15dp"-->
+<!--                android:textColor="#808080"-->
+<!--                android:layout_marginTop="8sp"-->
+<!--                />-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:layout_width="80sp"-->
+<!--                android:layout_height="40sp"-->
+<!--                app:backgroundTint="#3DB891"-->
+<!--                android:text="#협소"-->
+<!--                app:cornerRadius="10dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_weight="1"/>-->
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:layout_width="80sp"-->
+<!--                    android:layout_height="40sp"-->
+<!--                    app:backgroundTint="#3DB891"-->
+<!--                    android:text="#태그2"-->
+<!--                    app:cornerRadius="10dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginLeft="10sp"/>-->
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:layout_width="80sp"-->
+<!--                    android:layout_height="40sp"-->
+<!--                    app:backgroundTint="#3DB891"-->
+<!--                    android:text="#태그3"-->
+<!--                    app:cornerRadius="10dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginLeft="10sp"/>-->
+<!--            </LinearLayout>-->
+
+<!--&lt;!&ndash;리스트 출력&ndash;&gt;-->
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="250sp"-->
+<!--                android:backgroundTint="#B6D0E7"-->
+<!--                app:cardCornerRadius="15sp"-->
+<!--                android:layout_marginTop="17dp"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="협소주택에 관한 이미지2  "-->
+<!--                android:textSize="20dp"-->
+<!--                android:textColor="#000"-->
+<!--                android:layout_marginTop="30sp"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="협소주택에 관한 사진들을 모았습니다.2"-->
+<!--                android:textSize="15dp"-->
+<!--                android:textColor="#808080"-->
+<!--                android:layout_marginTop="8sp"-->
+<!--                />-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:layout_width="80sp"-->
+<!--                    android:layout_height="40sp"-->
+<!--                    app:backgroundTint="#3DB891"-->
+<!--                    android:text="#협소"-->
+<!--                    app:cornerRadius="10dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_weight="1"/>-->
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:layout_width="80sp"-->
+<!--                    android:layout_height="40sp"-->
+<!--                    app:backgroundTint="#3DB891"-->
+<!--                    android:text="#태그2"-->
+<!--                    app:cornerRadius="10dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginLeft="10sp"/>-->
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:layout_width="80sp"-->
+<!--                    android:layout_height="40sp"-->
+<!--                    app:backgroundTint="#3DB891"-->
+<!--                    android:text="#태그3"-->
+<!--                    app:cornerRadius="10dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginLeft="10sp"/>-->
+<!--            </LinearLayout>-->
+
+<!--&lt;!&ndash;            리스트3&ndash;&gt;-->
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="250sp"-->
+<!--                android:backgroundTint="#e5e5e5"-->
+<!--                app:cardCornerRadius="15sp"-->
+<!--                android:layout_marginTop="17dp"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="협소주택에 관한 이미지3  "-->
+<!--                android:textSize="20dp"-->
+<!--                android:textColor="#000"-->
+<!--                android:layout_marginTop="30sp"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="협소주택에 관한 사진들을 모았습니다.2"-->
+<!--                android:textSize="15dp"-->
+<!--                android:textColor="#808080"-->
+<!--                android:layout_marginTop="8sp"-->
+<!--                />-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:layout_width="80sp"-->
+<!--                    android:layout_height="40sp"-->
+<!--                    app:backgroundTint="#3DB891"-->
+<!--                    android:text="#협소"-->
+<!--                    app:cornerRadius="10dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_weight="1"/>-->
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:layout_width="80sp"-->
+<!--                    android:layout_height="40sp"-->
+<!--                    app:backgroundTint="#3DB891"-->
+<!--                    android:text="#태그4"-->
+<!--                    app:cornerRadius="10dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginLeft="10sp"/>-->
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:layout_width="80sp"-->
+<!--                    android:layout_height="40sp"-->
+<!--                    app:backgroundTint="#3DB891"-->
+<!--                    android:text="#태그5"-->
+<!--                    app:cornerRadius="10dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginLeft="10sp"/>-->
+<!--            </LinearLayout>-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shopping_arcore">
+
+    <fragment
+        android:id="@+id/ux_fragment"
+        android:name="com.example.house2.WritingArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+    </fragment>
+
+<!--    <ScrollView-->
+<!--        android:id="@+id/scrollView3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent">-->
+
+<!--       -->
+<!--    </ScrollView>-->
+
+
+    <!--    컬러패널에 들어갈 요소-->
+
+    <ImageView
+        android:id="@+id/PLACE_FURNITURE"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginBottom="44dp"
+        android:src="@drawable/iconmonstrplus5240"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/clearButton"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toEndOf="@+id/CAPTURE_BUTTON" />
+
+    <LinearLayout
+        android:id="@+id/colorPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/panel"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ux_fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="40sp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30sp"
+            android:src="@drawable/paintbrush7240"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ImageView
+            android:id="@+id/color_change_btn"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:src="@drawable/iconmonstreyedropper3240"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="30sp"/>
+
+        <ImageView
+            android:id="@+id/removeButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:src="@drawable/iconmonstreraser"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"/>
+
+        <ImageView
+            android:id="@+id/select_change_BTN"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0sp"
+            android:layout_marginRight="30sp"
+            android:src="@drawable/mediacontro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/select_cart_BTN"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0sp"
+            android:layout_marginRight="30sp"
+            android:src="@drawable/shoppingcart2240"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/moveToModel_btn"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="132dp"
+        android:src="@drawable/iconmonstrcursor240"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/clearButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="44dp"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/undoButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/undo1240"
+        android:layout_marginBottom="120sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/CAPTURE_BUTTON"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="44dp"
+        android:src="@drawable/photocamera13240"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+<!--    색상 바꿀때 부분부분 선택하기 -->
+    <LinearLayout
+        android:id="@+id/PLACE_SELECT_PART"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ux_fragment"
+        app:layout_constraintTop_toTopOf="@+id/ux_fragment"
+        android:paddingHorizontal="20sp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="500sp"
+            app:cardCornerRadius="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ux_fragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:paddingHorizontal="10sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="색상선택하기"
+                android:textColor="@android:color/black"
+                android:textSize="25dp" />
+
+
+            <com.google.ar.sceneform.SceneView
+                android:id="@+id/sceneView2"
+                android:layout_width="match_parent"
+                android:layout_height="350sp"
+                android:backgroundTint="@color/yellow"
+                android:background="#FFF"
+                android:layout_marginHorizontal="10sp"
+               />
+
+            <Spinner
+                android:id="@+id/select_spinner"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginTop="5sp"
+                android:layout_marginLeft="100sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/part_select_OK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="확인"/>
+
+                <Button
+                    android:id="@+id/part_select_cancle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="취소"
+                    android:layout_marginLeft="10sp"/>
+            </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/PLACE_FURNITURE_SELECT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ux_fragment">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="400sp"
+            app:cardCornerRadius="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ux_fragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="다른 가구 배치하기"
+                android:textColor="@android:color/black"
+                android:textSize="25dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/item_arcore_image_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10sp"
+                android:layout_marginTop="60sp"
+                android:layout_marginBottom="20sp" />
+
+            <!--&lt;!&ndash;            가구배치1&ndash;&gt;-->
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:layout_marginTop="50sp">-->
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="150sp"-->
+            <!--                android:layout_height="150sp"-->
+            <!--                app:cardCornerRadius="10sp"-->
+            <!--                app:cardElevation="0sp"-->
+            <!--                android:layout_gravity="center_vertical"-->
+            <!--                android:layout_marginLeft="50sp"-->
+            <!--                >-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/item_show_image"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:src="@drawable/shoplist01" />-->
+
+            <!--            </androidx.cardview.widget.CardView>-->
+
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="150sp"-->
+            <!--                android:layout_height="150sp"-->
+            <!--                app:cardCornerRadius="10sp"-->
+            <!--                app:cardElevation="0sp"-->
+            <!--                android:layout_gravity="center_vertical"-->
+            <!--                android:layout_marginLeft="20sp"-->
+            <!--                >-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/item_show_image2"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:src="@drawable/shoplist02"-->
+            <!--                    android:scaleType="centerCrop"-->
+            <!--                    />-->
+
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:layout_marginTop="220sp"-->
+            <!--                >-->
+
+            <!--                <androidx.cardview.widget.CardView-->
+            <!--                    android:layout_width="150sp"-->
+            <!--                    android:layout_height="150sp"-->
+            <!--                    app:cardCornerRadius="10sp"-->
+            <!--                    app:cardElevation="0sp"-->
+            <!--                    android:layout_gravity="center_vertical"-->
+            <!--                    android:layout_marginLeft="50sp"-->
+            <!--                    >-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/item_show_image3"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="match_parent"-->
+            <!--                        android:src="@drawable/shoplist03"-->
+            <!--                        android:scaleType="centerCrop"/>-->
+
+            <!--                </androidx.cardview.widget.CardView>-->
+
+
+            <!--                <androidx.cardview.widget.CardView-->
+            <!--                    android:layout_width="150sp"-->
+            <!--                    android:layout_height="150sp"-->
+            <!--                    app:cardCornerRadius="10sp"-->
+            <!--                    app:cardElevation="0sp"-->
+            <!--                    android:layout_gravity="center_vertical"-->
+            <!--                    android:layout_marginLeft="20sp"-->
+            <!--                    >-->
+
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/item_show_image4"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="match_parent"-->
+            <!--                        android:src="@drawable/shoplist04"-->
+            <!--                        android:scaleType="centerCrop"-->
+            <!--                        />-->
+
+            <!--                </androidx.cardview.widget.CardView>-->
+
+            <!--            </LinearLayout>-->
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

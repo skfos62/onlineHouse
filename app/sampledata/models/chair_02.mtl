@@ -1,0 +1,27 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl M_608_TT3_soft_flat_Material_01
+Ka 0.000000 0.000000 0.000000
+Kd 0.937255 0.949020 0.925490
+Ks 0.330000 0.330000 0.330000
+map_Kd chair_02/softflataterial01.jpg
+
+newmtl FrontColor
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.330000 0.330000 0.330000
+
+newmtl Color_A01
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.330000 0.330000 0.330000
+map_Kd chair_02/Color_A01.jpg
+
+newmtl Color_A02
+Ka 0.000000 0.000000 0.000000
+Kd 0.498039 0.498039 0.435294
+Ks 0.330000 0.330000 0.330000
+map_Kd chair_02/Color_A02.jpg
+

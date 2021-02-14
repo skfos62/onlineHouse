@@ -1,0 +1,76 @@
+{
+  materials: [
+    {
+      name: 'Color_M00',
+      parameters: [
+        {
+          baseColor: null,
+        },
+        {
+          baseColorTint: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+    {
+      name: 'M_0a1a11a14db5bd8637a776b3bedc5822b314354b',
+      parameters: [
+        {
+          baseColor: 'M_0a1a11a14db5bd8637a776b3bedc5822b314354b',
+        },
+        {
+          baseColorTint: [
+            0.73725499999999999,
+            0.611765,
+            0.47058800000000001,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/models/moden_cab.obj',
+    name: 'moden_cab',
+    recenter: 'root',
+    scale: 0.031348000000000001,
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/moden_cab/M_0a1a11a14db5bd8637a776b3bedc5822b314354b.jpg',
+      name: 'M_0a1a11a14db5bd8637a776b3bedc5822b314354b',
+      pipeline_name: 'moden_cab/M_0a1a11a14db5bd8637a776b3bedc5822b314354b.jpg',
+    },
+  ],
+  version: '0.54:2',
+}

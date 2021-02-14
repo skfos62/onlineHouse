@@ -1,0 +1,138 @@
+{
+  materials: [
+    {
+      name: 'M_608_TT3_soft_flat_Material_01',
+      parameters: [
+        {
+          baseColor: 'M_608_TT3_soft_flat_Material_01',
+        },
+        {
+          baseColorTint: [
+            0.93725499999999995,
+            0.94901999999999997,
+            0.92549000000000003,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+    {
+      name: 'FrontColor',
+      parameters: [
+        {
+          baseColor: null,
+        },
+        {
+          baseColorTint: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+    {
+      name: 'Color_A01',
+      parameters: [
+        {
+          baseColor: 'Color_A01',
+        },
+        {
+          baseColorTint: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+    {
+      name: 'Color_A02',
+      parameters: [
+        {
+          baseColor: 'Color_A02',
+        },
+        {
+          baseColorTint: [
+            0.49803900000000001,
+            0.49803900000000001,
+            0.43529400000000001,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/models/chair_02.obj',
+    name: 'chair_02',
+    recenter: 'root',
+    scale: 0.014546,
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/chair_02/Color_A02.jpg',
+      name: 'Color_A02',
+      pipeline_name: 'chair_02/Color_A02.jpg',
+    },
+    {
+      file: 'sampledata/models/chair_02/Color_A01.jpg',
+      name: 'Color_A01',
+      pipeline_name: 'chair_02/Color_A01.jpg',
+    },
+    {
+      file: 'sampledata/models/chair_02/M_608_TT3_soft_flat_Material_01.jpg',
+      name: 'M_608_TT3_soft_flat_Material_01',
+      pipeline_name: 'chair_02/M_608_TT3_soft_flat_Material_01.jpg',
+    },
+  ],
+  version: '0.54:2',
+}

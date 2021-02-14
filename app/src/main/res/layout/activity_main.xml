@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout="@layout/fragment_home">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_bottom_navi_bar"
+        app:itemTextColor="#000"
+        app:itemIconTint="#000"
+        />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+<!--            &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+
+<!--            <ScrollView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginBottom="60sp"-->
+<!--                android:layout_weight="1" >-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:padding="30sp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:layout_weight="1" >-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="이번주 인기사진"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:textColor="#000"-->
+<!--                        />-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="금주에 가장많이 좋아요를 받은 사진입니다."-->
+<!--                        android:textSize="15dp"-->
+<!--                        android:textColor="#808080"-->
+<!--                        android:layout_marginTop="8sp"-->
+<!--                        />-->
+
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="300sp"-->
+<!--                        android:backgroundTint="#f6e1e1"-->
+<!--                        app:cardCornerRadius="15sp"-->
+<!--                        android:layout_marginTop="17dp"-->
+<!--                        />-->
+
+
+<!--                    <Button-->
+<!--                        android:id="@+id/kakaologout"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="로그아웃"-->
+<!--                        android:visibility="invisible" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="베스트 상품 "-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:textColor="#000"-->
+<!--                        />-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="금주에 가장많이 좋아요를 받은 사진입니다."-->
+<!--                        android:textSize="15dp"-->
+<!--                        android:textColor="#808080"-->
+<!--                        android:layout_marginTop="8sp"-->
+<!--                        />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:layout_weight="1" >-->
+
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_width="150sp"-->
+<!--                            android:layout_height="150sp"-->
+<!--                            android:backgroundTint="#e7f0c3"-->
+<!--                            app:cardCornerRadius="15sp"-->
+<!--                            android:layout_marginTop="17dp"-->
+<!--                            />-->
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_width="150sp"-->
+<!--                            android:layout_height="150sp"-->
+<!--                            android:backgroundTint="#a4d4ae"-->
+<!--                            app:cardCornerRadius="15sp"-->
+<!--                            android:layout_marginTop="17dp"-->
+<!--                            android:layout_marginLeft="10sp"-->
+<!--                            />-->
+<!--                    </LinearLayout>-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:layout_weight="1">-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="160dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:layout_weight="1">-->
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="상품1 "-->
+<!--                                android:textSize="17dp"-->
+<!--                                android:textColor="#000"-->
+<!--                                android:layout_marginTop="15sp"-->
+<!--                                />-->
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="상품의 상세설명"-->
+<!--                                android:textSize="13dp"-->
+<!--                                android:textColor="#808080"-->
+<!--                                android:layout_marginTop="8sp"-->
+<!--                                />-->
+<!--                            <com.google.android.material.button.MaterialButton-->
+<!--                                android:layout_width="140sp"-->
+<!--                                android:layout_height="60sp"-->
+<!--                                app:backgroundTint="#000"-->
+<!--                                android:text="구매하기"-->
+<!--                                app:cornerRadius="50dp"-->
+<!--                                android:layout_gravity="center_horizontal"-->
+<!--                                android:layout_marginTop="20dp"-->
+<!--                                android:layout_weight="1"/>-->
+
+
+<!--                        </LinearLayout>-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="160dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:layout_marginLeft="16sp"-->
+<!--                            android:layout_weight="1">-->
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="상품2 "-->
+<!--                                android:textSize="17dp"-->
+<!--                                android:textColor="#000"-->
+<!--                                android:layout_marginTop="15sp"-->
+<!--                                android:layout_weight="1"-->
+<!--                                />-->
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="상품의 상세설명"-->
+<!--                                android:textSize="13dp"-->
+<!--                                android:textColor="#808080"-->
+<!--                                android:layout_marginTop="8sp"-->
+<!--                                android:layout_weight="1"-->
+<!--                                />-->
+<!--                            <com.google.android.material.button.MaterialButton-->
+<!--                                android:layout_width="140sp"-->
+<!--                                android:layout_height="60sp"-->
+<!--                                app:backgroundTint="#000"-->
+<!--                                android:text="구매하기"-->
+<!--                                app:cornerRadius="50dp"-->
+<!--                                android:layout_marginTop="20dp"-->
+<!--                                android:layout_weight="1"/>-->
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+<!--            </ScrollView>-->
+
+
+        </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

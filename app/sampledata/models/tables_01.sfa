@@ -1,0 +1,81 @@
+{
+  materials: [
+    {
+      name: 'MD157_MK_PSS_Material_01',
+      parameters: [
+        {
+          baseColor: 'MD157_MK_PSS_Material_01',
+        },
+        {
+          baseColorTint: [
+            0.094117999999999993,
+            0.050979999999999998,
+            0.019608,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+    {
+      name: 'MD157_MK_PSS_Material_02',
+      parameters: [
+        {
+          baseColor: 'MD157_MK_PSS_Material_02',
+        },
+        {
+          baseColorTint: [
+            0.65098,
+            0.65098,
+            0.65098,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/models/tables_01.obj',
+    name: 'tables_01',
+    recenter: 'root',
+    scale: 0.038462000000000003,
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/tables_01/MD157_MK_PSS_Material_02.jpg',
+      name: 'MD157_MK_PSS_Material_02',
+      pipeline_name: 'tables_01/MD157_MK_PSS_Material_02.jpg',
+    },
+    {
+      file: 'sampledata/models/tables_01/MD157_MK_PSS_Material_01.jpg',
+      name: 'MD157_MK_PSS_Material_01',
+      pipeline_name: 'tables_01/MD157_MK_PSS_Material_01.jpg',
+    },
+  ],
+  version: '0.54:2',
+}

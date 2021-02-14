@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.home">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60sp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30sp"
+            android:orientation="vertical"
+            android:layout_weight="1" >
+            <TextView
+                android:id="@+id/secret_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="랜선집들이 최신글"
+                android:textSize="23dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="커뮤니티에 올라온 최신글 입니다. "
+                android:textSize="15dp"
+                android:textColor="#808080"
+                android:layout_marginTop="8sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/main_list">
+                <ImageView
+                    android:id="@+id/iv_new_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="300sp"
+                    android:layout_marginTop="17dp"
+                    android:backgroundTint="#f6e1e1" />
+
+                <TextView
+                    android:id="@+id/tv_new_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:text="최신글 제목 "
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_new_con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="최신글 내용 "
+                    android:textSize="15dp"
+                    android:textColor="#808080"
+                    android:layout_marginTop="8sp"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e5e5e5"
+                android:layout_marginTop="15sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="랜선집들이 판매제품"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginTop="30sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="랜선집들이에서 판매하는 상품입니다."
+                android:textSize="15dp"
+                android:textColor="#808080"
+                android:layout_marginTop="8sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_list_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"/>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_weight="1" >-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="150sp"-->
+<!--                    android:layout_height="150sp"-->
+<!--                    android:layout_marginTop="17dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:backgroundTint="#e7f0c3"-->
+<!--                    app:cardCornerRadius="15sp" />-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_width="150sp"-->
+<!--                    android:layout_height="150sp"-->
+<!--                    android:backgroundTint="#a4d4ae"-->
+<!--                    app:cardCornerRadius="15sp"-->
+<!--                    android:layout_marginTop="17dp"-->
+<!--                    android:layout_marginLeft="10sp"-->
+<!--                    />-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_weight="1">-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="160dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:layout_weight="1">-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="상품1 "-->
+<!--                        android:textSize="17dp"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:layout_marginTop="15sp"-->
+<!--                        />-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="상품의 상세설명"-->
+<!--                        android:textSize="13dp"-->
+<!--                        android:textColor="#808080"-->
+<!--                        android:layout_marginTop="8sp"-->
+<!--                        />-->
+<!--                    <com.google.android.material.button.MaterialButton-->
+<!--                        android:layout_width="140sp"-->
+<!--                        android:layout_height="60sp"-->
+<!--                        app:backgroundTint="#000"-->
+<!--                        android:text="구매하기"-->
+<!--                        app:cornerRadius="50dp"-->
+<!--                        android:layout_gravity="center_horizontal"-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:layout_weight="1"/>-->
+
+
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="160dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:layout_marginLeft="16sp"-->
+<!--                    android:layout_weight="1">-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="상품2 "-->
+<!--                        android:textSize="17dp"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:layout_marginTop="15sp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        />-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="상품의 상세설명"-->
+<!--                        android:textSize="13dp"-->
+<!--                        android:textColor="#808080"-->
+<!--                        android:layout_marginTop="8sp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        />-->
+<!--                    <com.google.android.material.button.MaterialButton-->
+<!--                        android:layout_width="140sp"-->
+<!--                        android:layout_height="60sp"-->
+<!--                        app:backgroundTint="#000"-->
+<!--                        android:text="구매하기"-->
+<!--                        app:cornerRadius="50dp"-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:layout_weight="1"/>-->
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+<!--            <Button-->
+<!--                android:id="@+id/kakaologout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="로그아웃"-->
+<!--                android:visibility="gone"-->
+<!--                android:layout_marginTop="30sp"/>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

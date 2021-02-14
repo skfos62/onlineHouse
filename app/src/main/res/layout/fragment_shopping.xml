@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shopping"
+    android:layout_marginBottom="60sp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="30sp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="쇼핑하기"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:text="랜선집들이에서 구매 가능한 상품입니다."
+            android:textColor="#808080"
+            android:textSize="15dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20sp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/tv_shopping_viewAll"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:src="@drawable/interiordesign"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tv_shopping_viewAll_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5sp"
+                    android:text="전체보기"
+                    android:textColor="#000" />
+            </LinearLayout>
+            <View
+                android:layout_width="1sp"
+                android:layout_height="80sp"
+                android:layout_centerInParent="true"
+                android:background="#e5e5e5"
+                android:layout_marginHorizontal="10sp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/tv_shopping_fur"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:src="@drawable/cabinet"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/tv_shopping_fur_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5sp"
+                    android:text="가구"
+                    android:textColor="#000" />
+            </LinearLayout>
+            <View
+                android:layout_width="1sp"
+                android:layout_height="80sp"
+                android:layout_centerInParent="true"
+                android:background="#e5e5e5"
+                android:layout_marginHorizontal="10sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/tv_shopping_chair"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:src="@drawable/interior2"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/tv_shopping_chair_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5sp"
+                    android:text="의자"
+                    android:textColor="#000" />
+            </LinearLayout>
+            <View
+                android:layout_width="1sp"
+                android:layout_height="80sp"
+                android:layout_centerInParent="true"
+                android:background="#e5e5e5"
+                android:layout_marginHorizontal="10sp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/tv_shopping_table"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:src="@drawable/desk"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/tv_shopping_table_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5sp"
+                    android:text="테이블"
+                    android:textColor="#000" />
+            </LinearLayout>
+            <View
+                android:layout_width="1sp"
+                android:layout_height="80sp"
+                android:layout_centerInParent="true"
+                android:background="#e5e5e5"
+                android:layout_marginHorizontal="10sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/tv_shopping_lamp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:src="@drawable/etc"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/tv_shopping_lamp_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5sp"
+                    android:text="소품"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <!--            -->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_shopping_fur"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="40sp"-->
+<!--            android:layout_gravity="left"-->
+<!--            android:layout_marginTop="15sp"-->
+<!--            android:layout_marginLeft="10sp"-->
+<!--            android:background="@drawable/shape"-->
+<!--            android:padding="10sp"-->
+<!--            android:paddingHorizontal="10sp"-->
+<!--            android:text="가구"-->
+<!--            android:textColor="#000" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_shopping_chair"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="40sp"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:layout_marginTop="15sp"-->
+<!--                android:layout_marginLeft="10sp"-->
+<!--                android:background="@drawable/shape"-->
+<!--                android:padding="10sp"-->
+<!--                android:paddingHorizontal="10sp"-->
+<!--                android:text="의자"-->
+<!--                android:textColor="#000" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_shopping_table"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="40sp"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:layout_marginTop="15sp"-->
+<!--                android:layout_marginLeft="10sp"-->
+<!--                android:background="@drawable/shape"-->
+<!--                android:padding="10sp"-->
+<!--                android:paddingHorizontal="10sp"-->
+<!--                android:text="테이블"-->
+<!--                android:textColor="#000" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_shopping_lamp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="40sp"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:layout_marginTop="15sp"-->
+<!--                android:layout_marginLeft="10sp"-->
+<!--                android:background="@drawable/shape"-->
+<!--                android:padding="10sp"-->
+<!--                android:paddingHorizontal="10sp"-->
+<!--                android:text="소품"-->
+<!--                android:textColor="#000" />-->
+        </LinearLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/shop_list_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <!--        <ImageView-->
+        <!--            android:layout_width="120sp"-->
+        <!--            android:layout_height="120sp"-->
+        <!--            android:src="@drawable/iconmonstrsmileythin240"-->
+        <!--            android:layout_marginBottom="50sp"/>-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_arcore"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="랜선 집들이는"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:layout_marginVertical="5sp"-->
+        <!--            />-->
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="실제 고객님의 방에 가구를 "-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:layout_marginVertical="5sp"-->
+        <!--            />-->
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="배치해볼수 있게 했습니다 ;-) "-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:layout_marginVertical="5sp"-->
+        <!--            />-->
+
+
+        <TextView
+            android:id="@+id/tv_arcore2"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="40sp"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:text="가구 배치하러 가기"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</FrameLayout>

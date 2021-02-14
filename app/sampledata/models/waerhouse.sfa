@@ -1,0 +1,138 @@
+{
+  materials: [
+    {
+      name: '_1',
+      parameters: [
+        {
+          baseColor: '_1',
+        },
+        {
+          baseColorTint: [
+            0.56078399999999995,
+            0.45097999999999999,
+            0.32549,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+    {
+      name: '_2',
+      parameters: [
+        {
+          baseColor: '_2',
+        },
+        {
+          baseColorTint: [
+            0.56078399999999995,
+            0.45097999999999999,
+            0.32549,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+    {
+      name: 'Translucent_Glass_Gray',
+      parameters: [
+        {
+          baseColor: null,
+        },
+        {
+          baseColorTint: [
+            0.50196099999999999,
+            0.50196099999999999,
+            0.50196099999999999,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: 0.27000000000000002,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+    {
+      name: '_4',
+      parameters: [
+        {
+          baseColor: '_4',
+        },
+        {
+          baseColorTint: [
+            0.46274500000000002,
+            0.40000000000000002,
+            0.30588199999999999,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: 0.78000000000000003,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/models/waerhouse.obj',
+    name: 'waerhouse',
+    recenter: 'root',
+    scale: 0.025000000000000001,
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/waerhouse/_4.jpg',
+      name: '_4',
+      pipeline_name: 'waerhouse/_4.jpg',
+    },
+    {
+      file: 'sampledata/models/waerhouse/_2.jpg',
+      name: '_2',
+      pipeline_name: 'waerhouse/_2.jpg',
+    },
+    {
+      file: 'sampledata/models/waerhouse/_1.jpg',
+      name: '_1',
+      pipeline_name: 'waerhouse/_1.jpg',
+    },
+  ],
+  version: '0.54:2',
+}

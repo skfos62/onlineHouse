@@ -1,0 +1,76 @@
+{
+  materials: [
+    {
+      name: 'AM134_14_plate1',
+      parameters: [
+        {
+          baseColor: null,
+        },
+        {
+          baseColorTint: [
+            0.97647099999999998,
+            0.97647099999999998,
+            0.97647099999999998,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+    {
+      name: 'AM134_14_wood_2',
+      parameters: [
+        {
+          baseColor: 'AM134_14_wood_2',
+        },
+        {
+          baseColorTint: [
+            0.69019600000000003,
+            0.57647099999999996,
+            0.466667,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/models/etc_04.obj',
+    name: 'etc_04',
+    recenter: 'root',
+    scale: 0.0001619,
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/etc_04/AM134_14_wood_2.png',
+      name: 'AM134_14_wood_2',
+      pipeline_name: 'etc_04/AM134_14_wood_2.png',
+    },
+  ],
+  version: '0.54:2',
+}
